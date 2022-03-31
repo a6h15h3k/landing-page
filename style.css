@@ -1,24 +1,36 @@
 *   {
     margin: 0;
     padding: 0;
+    border: 2px solid red;
 }
 
 body    {
     height: 100vh;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     display: flex;
     flex-direction: column;
+}
+
+body > *    {
+    justify-content: space-between;
 }
 
 /******** Header Starts ********/
 .header  {
     display: flex;
     justify-content: space-between;
+    background-color: #1F2937;
+}
+
+.header-left    {
+    font-size: 24px;
+    color: #F9F8FA;
 }
 
 .header-right > *   {
     display: flex;
     list-style: none;
+    color: #E5E7EB;
 }
 /* Header Ends */
 
@@ -27,15 +39,37 @@ body    {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
 }
 
 .hero {
     display: flex;
+    background-color: #1F2937;
 }
 
 .hero-left, .hero-right {
     flex: 1;
+}
+
+.hero-text  {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.hero-description   {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.sign-up > button   {
+    color: #F9FAF8;
+    background: #3882F6;
+}
+
+.hero-right > img {
+    max-width: 700px;
+    max-height: 150px;
 }
 
 .information    {
@@ -46,6 +80,9 @@ body    {
 .information-top    {
     align-self: center;
     justify-self: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
 }
 
 .information-bottom > * {
@@ -54,22 +91,49 @@ body    {
     list-style: none;
 }
 
+.ammenities > img   {
+    height: 120px;
+    width:  120px;
+}
+
 .quote  {
     display: flex;
     flex-direction: column;
+    background: #E5E7EB;
 }
 
 .content    {
     align-self: center;
+    font-size: 36px;
+    font-style: oblique;
+    color: #1F2937;
 }
 
 .writer {
     align-self: flex-end;
 }
+
+.cta    {
+    display: flex;
+}
+
+.cta > *    {
+    flex: 1;
+}
 /* Middle Ends */
 
 /******** Footer Starts ********/
 .footer {
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-size: 18px;
+    display: flex;
+}
+
+.footer > .text    {
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
 /* Footer Ends */
